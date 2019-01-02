@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.2.2">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="100" unitdist="mic" unit="mic" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="GAN_SINGLE_SENSOR">
+<smd name="SF" x="0.33" y="0.15" dx="0.66" dy="0.3" layer="1"/>
+<smd name="DF" x="2.23" y="0.15" dx="0.66" dy="0.3" layer="1"/>
+<smd name="SS" x="1.03" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<smd name="DS" x="1.53" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<wire x1="-0.1" y1="1.81" x2="2.68" y2="1.81" width="0.127" layer="21"/>
+<wire x1="2.68" y1="1.81" x2="2.68" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="2.68" y1="-0.1" x2="-0.1" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="-0.1" x2="-0.1" y2="1.81" width="0.127" layer="21"/>
+<text x="0" y="4.34" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27">&gt;VALUES</text>
+<rectangle x1="0" y1="1.3" x2="0.66" y2="2.87" layer="21"/>
+<rectangle x1="1.9" y1="1.3" x2="2.56" y2="2.87" layer="21"/>
+<rectangle x1="0.9" y1="1.3" x2="1.16" y2="1.6" layer="21"/>
+<rectangle x1="1.4" y1="1.3" x2="1.66" y2="1.6" layer="21"/>
+</package>
+<package name="RTD_4-WIRE">
+<smd name="RTD_POWER+" x="0.33" y="0.15" dx="0.66" dy="0.3" layer="1" rot="R180"/>
+<smd name="RTD_POWER-" x="1.18" y="0.15" dx="0.66" dy="0.3" layer="1" rot="R180"/>
+<wire x1="-0.1" y1="-0.1" x2="-0.1" y2="1.81" width="0.127" layer="51"/>
+<wire x1="-0.1" y1="1.81" x2="1.61" y2="1.81" width="0.127" layer="51"/>
+<wire x1="1.61" y1="1.81" x2="1.61" y2="-0.1" width="0.127" layer="51"/>
+<wire x1="1.61" y1="-0.1" x2="-0.1" y2="-0.1" width="0.127" layer="51"/>
+<text x="0" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27">&gt;VALUES</text>
+<rectangle x1="0" y1="1.3" x2="0.66" y2="1.6" layer="21"/>
+<rectangle x1="0.85" y1="1.3" x2="1.51" y2="1.6" layer="21"/>
+</package>
+<package name="ELECTRICAL_CONDUCTIVITY">
+<smd name="EC_1" x="0" y="0" dx="10" dy="2.5" layer="1" rot="R270"/>
+<smd name="EC_2" x="5" y="0" dx="10" dy="2.5" layer="1" rot="R270"/>
+<text x="-1.27" y="7.62" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-8.89" size="1.27" layer="27">&gt;VALUES</text>
+<wire x1="-2.54" y1="6.35" x2="-2.54" y2="-6.35" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="-6.35" x2="7.62" y2="-6.35" width="0.127" layer="51"/>
+<wire x1="7.62" y1="-6.35" x2="7.62" y2="6.35" width="0.127" layer="51"/>
+<wire x1="7.62" y1="6.35" x2="-2.54" y2="6.35" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="6.35" x2="-2.54" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="7.62" y1="6.35" x2="-2.54" y2="6.35" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-6.35" x2="7.62" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-6.35" x2="7.62" y2="-6.35" width="0.127" layer="21"/>
+<text x="-0.5" y="5.2" size="0.8" layer="21">Electrical</text>
+<text x="-1.4" y="-6.1" size="0.8" layer="21">Conductivity</text>
+</package>
+<package name="GAN_SENSOR_REF_ELEC">
+<description>GaN single sensor with reference electrode, and Schottky diode</description>
+<smd name="SF" x="0.33" y="0.15" dx="0.66" dy="0.3" layer="1"/>
+<smd name="SS" x="1.03" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<smd name="SCHOTTKY_DIODE" x="-0.29" y="0.15" dx="0.27" dy="0.3" layer="1"/>
+<smd name="REF_ELEC" x="-0.715" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<smd name="DS" x="1.53" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<smd name="DS_RF" x="2.03" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<smd name="DF" x="2.73" y="0.15" dx="0.66" dy="0.3" layer="1" rot="R180"/>
+<wire x1="-1" y1="-0.1" x2="-1" y2="1.6" width="0.127" layer="51"/>
+<wire x1="-1" y1="1.6" x2="3.2" y2="1.6" width="0.127" layer="51"/>
+<wire x1="3.2" y1="1.6" x2="3.2" y2="-0.1" width="0.127" layer="51"/>
+<wire x1="3.2" y1="-0.1" x2="-1" y2="-0.1" width="0.127" layer="51"/>
+<text x="-1.27" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUES</text>
+<rectangle x1="0" y1="1.3" x2="0.66" y2="2.87" layer="21"/>
+<rectangle x1="2.4" y1="1.3" x2="3.06" y2="2.87" layer="21"/>
+<rectangle x1="0.9" y1="1.3" x2="1.16" y2="1.6" layer="21"/>
+<rectangle x1="0.9" y1="1.3" x2="1.16" y2="1.6" layer="21"/>
+<rectangle x1="1.4" y1="1.3" x2="1.66" y2="1.6" layer="21"/>
+<rectangle x1="1.9" y1="1.3" x2="2.16" y2="1.6" layer="21"/>
+<rectangle x1="-0.425" y1="1.3" x2="-0.155" y2="1.6" layer="21"/>
+<rectangle x1="-0.845" y1="1.3" x2="-0.585" y2="1.6" layer="21"/>
+</package>
+<package name="GAN_CC_ARRAY_SENSOR">
+<description>GaN constant current array sensor pads (two for power, and three pairs of sense terminals).</description>
+<smd name="SF" x="0.33" y="0.15" dx="0.66" dy="0.3" layer="1"/>
+<smd name="DF" x="4.23" y="0.15" dx="0.66" dy="0.3" layer="1"/>
+<wire x1="-0.1" y1="1.81" x2="4.72" y2="1.81" width="0.127" layer="21"/>
+<wire x1="4.72" y1="1.81" x2="4.72" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="4.72" y1="-0.1" x2="-0.1" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="-0.1" x2="-0.1" y2="1.81" width="0.127" layer="21"/>
+<text x="0" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27">&gt;VALUES</text>
+<smd name="SS1" x="1.03" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<smd name="DS1" x="1.53" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<smd name="SS2" x="2.03" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<smd name="DS2" x="2.53" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<smd name="SS3" x="3.03" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<smd name="DS3" x="3.53" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<rectangle x1="0" y1="1.3" x2="0.66" y2="2.87" layer="21"/>
+<rectangle x1="0.9" y1="1.3" x2="1.16" y2="1.6" layer="21"/>
+<rectangle x1="1.4" y1="1.3" x2="1.66" y2="1.6" layer="21"/>
+<rectangle x1="1.9" y1="1.3" x2="2.16" y2="1.6" layer="21"/>
+<rectangle x1="2.4" y1="1.3" x2="2.66" y2="1.6" layer="21"/>
+<rectangle x1="2.9" y1="1.3" x2="3.16" y2="1.6" layer="21"/>
+<rectangle x1="3.4" y1="1.3" x2="3.66" y2="1.6" layer="21"/>
+<rectangle x1="3.9" y1="1.3" x2="4.56" y2="2.87" layer="21"/>
+</package>
+<package name="GAN_CC_ARRAY_SENSOR_REFELEC_SCHOTTKY">
+<description>GaN constant current array sensor pads (two for power, and three pairs of sense terminals).</description>
+<smd name="SF" x="0.33" y="0.15" dx="0.66" dy="0.3" layer="1"/>
+<smd name="DF" x="4.23" y="0.15" dx="0.66" dy="0.3" layer="1"/>
+<wire x1="-0.97" y1="1.81" x2="4.72" y2="1.81" width="0.127" layer="21"/>
+<wire x1="4.72" y1="1.81" x2="4.72" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="4.72" y1="-0.1" x2="-0.97" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="-0.97" y1="-0.1" x2="-0.97" y2="1.81" width="0.127" layer="21"/>
+<text x="0" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27">&gt;VALUES</text>
+<smd name="SS1" x="1.03" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<smd name="DS1" x="1.53" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<smd name="SS2" x="2.03" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<smd name="DS2" x="2.53" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<smd name="SS3" x="3.03" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<smd name="DS3" x="3.53" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<smd name="SCHOTTKY_DIODE" x="-0.3" y="0.15" dx="0.28" dy="0.3" layer="1"/>
+<smd name="REF_ELEC" x="-0.73" y="0.15" dx="0.28" dy="0.3" layer="1"/>
+<rectangle x1="0" y1="1.3" x2="0.66" y2="2.87" layer="21"/>
+<rectangle x1="3.9" y1="1.3" x2="4.56" y2="2.87" layer="21"/>
+<rectangle x1="0.9" y1="1.3" x2="1.16" y2="1.6" layer="21"/>
+<rectangle x1="0.9" y1="1.3" x2="1.16" y2="1.6" layer="21"/>
+<rectangle x1="1.4" y1="1.3" x2="1.66" y2="1.6" layer="21"/>
+<rectangle x1="1.9" y1="1.3" x2="2.16" y2="1.6" layer="21"/>
+<rectangle x1="2.4" y1="1.3" x2="2.66" y2="1.6" layer="21"/>
+<rectangle x1="2.9" y1="1.3" x2="3.16" y2="1.6" layer="21"/>
+<rectangle x1="3.4" y1="1.3" x2="3.66" y2="1.6" layer="21"/>
+<rectangle x1="-0.44" y1="1.3" x2="-0.16" y2="1.6" layer="21"/>
+<rectangle x1="-0.87" y1="1.3" x2="-0.59" y2="1.6" layer="21"/>
+</package>
+<package name="2.5_MM_X_2.5_MM_PAD">
+<smd name="SOLDER_PAD" x="0" y="0" dx="2.5" dy="5" layer="1"/>
+</package>
+<package name="Z-AXIS_SILKSCREEN">
+<wire x1="-3.7775" y1="-0.3" x2="3.7775" y2="-0.3" width="0.1524" layer="21"/>
+<wire x1="3.7775" y1="-0.3" x2="3.7775" y2="0.3" width="0.1524" layer="21"/>
+<wire x1="3.7775" y1="0.3" x2="-3.7775" y2="0.3" width="0.1524" layer="21"/>
+<wire x1="-3.7775" y1="0.3" x2="-3.7775" y2="-0.3" width="0.1524" layer="21"/>
+<wire x1="-4.2775" y1="0.7" x2="4.2775" y2="0.7" width="0.1524" layer="21"/>
+<wire x1="4.2775" y1="0.7" x2="4.2775" y2="-0.7" width="0.1524" layer="21"/>
+<wire x1="4.2775" y1="-0.7" x2="-4.2775" y2="-0.7" width="0.1524" layer="21"/>
+<wire x1="-4.2775" y1="-0.7" x2="-4.2775" y2="0.7" width="0.1524" layer="21"/>
+</package>
+<package name="GAN_SINGLE_SENSOR_SILKSCREEN">
+<description>2015 single sensor with silkscreen only (for z-axis elastomer alignment)</description>
+<wire x1="-0.1" y1="1.71" x2="2.68" y2="1.71" width="0.127" layer="21"/>
+<wire x1="2.68" y1="1.71" x2="2.68" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="2.68" y1="-0.1" x2="-0.1" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="-0.1" x2="-0.1" y2="1.71" width="0.127" layer="21"/>
+<text x="0" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27">&gt;VALUES</text>
+<rectangle x1="0" y1="0" x2="0.66" y2="1.57" layer="21"/>
+<rectangle x1="1.9" y1="0" x2="2.56" y2="1.57" layer="21"/>
+<rectangle x1="0.9" y1="0" x2="1.16" y2="0.3" layer="21"/>
+<rectangle x1="1.4" y1="0" x2="1.66" y2="0.3" layer="21"/>
+<wire x1="-0.1" y1="-0.1" x2="-0.1" y2="-0.09" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="-0.09" x2="-0.1" y2="1.71" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="1.71" x2="2.675" y2="1.71" width="0.127" layer="21"/>
+<rectangle x1="1.9" y1="0" x2="2.56" y2="1.57" layer="21"/>
+<rectangle x1="1.9" y1="0" x2="2.56" y2="1.57" layer="21"/>
+<wire x1="2.675" y1="-0.1" x2="2.675" y2="-0.09" width="0.127" layer="21"/>
+<wire x1="2.675" y1="-0.09" x2="2.675" y2="1.71" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="-0.09" x2="2.675" y2="-0.09" width="0.127" layer="21"/>
+<wire x1="0" y1="2.8" x2="0" y2="-2" width="0.0762" layer="21"/>
+<wire x1="-2" y1="0" x2="4" y2="0" width="0.0762" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="GAN_SINGLE_SENSOR">
+<text x="2.54" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="10.16" y="7.62" size="1.27" layer="96">&gt;VALUES</text>
+<wire x1="0" y1="0" x2="0" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="10.16" x2="20.32" y2="10.16" width="0.254" layer="94"/>
+<wire x1="20.32" y1="10.16" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="SF" x="2.54" y="-5.08" length="middle" direction="pwr" rot="R90"/>
+<pin name="SS" x="7.62" y="-5.08" length="middle" rot="R90"/>
+<pin name="DS" x="12.7" y="-5.08" length="middle" rot="R90"/>
+<pin name="DF" x="17.78" y="-5.08" length="middle" direction="pwr" rot="R90"/>
+</symbol>
+<symbol name="RTD-4_WIRE">
+<wire x1="-27.94" y1="-7.62" x2="-27.94" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-27.94" y1="20.32" x2="25.4" y2="20.32" width="0.254" layer="94"/>
+<wire x1="25.4" y1="20.32" x2="25.4" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-7.62" x2="-27.94" y2="-7.62" width="0.254" layer="94"/>
+<pin name="RTD_POWER+" x="-22.86" y="-12.7" length="middle" direction="pwr" rot="R90"/>
+<pin name="RTD_SENSE+" x="-12.7" y="-12.7" length="middle" rot="R90"/>
+<pin name="RTD_SENSE-" x="10.16" y="-12.7" length="middle" rot="R90"/>
+<pin name="RTD_POWER-" x="20.32" y="-12.7" length="middle" direction="pwr" rot="R90"/>
+<text x="-10.16" y="17.78" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="15.24" size="1.27" layer="96">&gt;VALUES</text>
+</symbol>
+<symbol name="ELECTRICAL_CONDUCTIVITY">
+<wire x1="0" y1="0" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="12.7" width="0.254" layer="94"/>
+<wire x1="22.86" y1="12.7" x2="0" y2="12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="12.7" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="EC_2" x="17.78" y="-5.08" length="middle" rot="R90"/>
+<pin name="EC_1" x="5.08" y="-5.08" length="middle" rot="R90"/>
+<text x="2.54" y="10.16" size="1.27" layer="95">&gt;NAME</text>
+<text x="12.7" y="10.16" size="1.27" layer="96">&gt;VALUES</text>
+</symbol>
+<symbol name="GAN_SINGLE_REF_ELEC">
+<wire x1="0" y1="0" x2="35.56" y2="0" width="0.254" layer="94"/>
+<wire x1="35.56" y1="0" x2="35.56" y2="17.78" width="0.254" layer="94"/>
+<wire x1="35.56" y1="17.78" x2="0" y2="17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="17.78" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="REF_ELEC" x="2.54" y="-5.08" length="middle" rot="R90"/>
+<pin name="SCHOTTKY_DIODE" x="7.62" y="-5.08" length="middle" rot="R90"/>
+<pin name="SF" x="12.7" y="-5.08" length="middle" direction="pwr" rot="R90"/>
+<pin name="SS" x="17.78" y="-5.08" length="middle" rot="R90"/>
+<pin name="DS" x="22.86" y="-5.08" length="middle" rot="R90"/>
+<pin name="REF_SENSE" x="27.94" y="-5.08" length="middle" rot="R90"/>
+<pin name="DF" x="33.02" y="-5.08" length="middle" direction="pwr" rot="R90"/>
+<text x="10.16" y="15.24" size="1.27" layer="95">&gt;NAME</text>
+<text x="10.16" y="12.7" size="1.27" layer="96">&gt;VALUES</text>
+</symbol>
+<symbol name="GAN_CC_ARRAY_SENSOR">
+<wire x1="0" y1="0" x2="45.72" y2="0" width="0.254" layer="94"/>
+<wire x1="45.72" y1="0" x2="45.72" y2="20.32" width="0.254" layer="94"/>
+<wire x1="45.72" y1="20.32" x2="0" y2="20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="20.32" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="SF" x="7.62" y="-5.08" length="middle" direction="pwr" rot="R90"/>
+<pin name="SS1" x="12.7" y="-5.08" length="middle" rot="R90"/>
+<pin name="DS1" x="17.78" y="-5.08" length="middle" rot="R90"/>
+<pin name="SS2" x="22.86" y="-5.08" length="middle" rot="R90"/>
+<pin name="DS2" x="27.94" y="-5.08" length="middle" rot="R90"/>
+<pin name="SS3" x="33.02" y="-5.08" length="middle" rot="R90"/>
+<pin name="DS3" x="38.1" y="-5.08" length="middle" rot="R90"/>
+<pin name="DF" x="43.18" y="-5.08" length="middle" direction="pwr" rot="R90"/>
+</symbol>
+<symbol name="GAN_CC_ARRAY_SENSOR_REFELEC_SCHOTTKY">
+<wire x1="-5.08" y1="0" x2="45.72" y2="0" width="0.254" layer="94"/>
+<wire x1="45.72" y1="0" x2="45.72" y2="20.32" width="0.254" layer="94"/>
+<wire x1="45.72" y1="20.32" x2="-5.08" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="20.32" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<pin name="SF" x="7.62" y="-5.08" length="middle" direction="pwr" rot="R90"/>
+<pin name="SS1" x="12.7" y="-5.08" length="middle" rot="R90"/>
+<pin name="DS1" x="17.78" y="-5.08" length="middle" rot="R90"/>
+<pin name="SS2" x="22.86" y="-5.08" length="middle" rot="R90"/>
+<pin name="DS2" x="27.94" y="-5.08" length="middle" rot="R90"/>
+<pin name="SS3" x="33.02" y="-5.08" length="middle" rot="R90"/>
+<pin name="DS3" x="38.1" y="-5.08" length="middle" rot="R90"/>
+<pin name="DF" x="43.18" y="-5.08" length="middle" direction="pwr" rot="R90"/>
+<pin name="SCHOTTKY_DIODE" x="2.54" y="-5.08" length="middle" rot="R90"/>
+<pin name="REF_ELEC" x="-2.54" y="-5.08" length="middle" rot="R90"/>
+<text x="10.16" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="25.4" y="15.24" size="1.778" layer="96">&gt;VALUES</text>
+</symbol>
+<symbol name="SOLDER_PAD">
+<pin name="SOLDER_PAD" x="0" y="0" length="middle"/>
+</symbol>
+<symbol name="Z-AXIS_SILKSCREEN">
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GAN_SINGLE_SENSOR_ONLY">
+<description>2015 Old single sensor</description>
+<gates>
+<gate name="G$1" symbol="GAN_SINGLE_SENSOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GAN_SINGLE_SENSOR">
+<connects>
+<connect gate="G$1" pin="DF" pad="DF"/>
+<connect gate="G$1" pin="DS" pad="DS"/>
+<connect gate="G$1" pin="SF" pad="SF"/>
+<connect gate="G$1" pin="SS" pad="SS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RTD-4_WIRE">
+<description>RTD made of Pt for 4 wire configuration</description>
+<gates>
+<gate name="G$1" symbol="RTD-4_WIRE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RTD_4-WIRE">
+<connects>
+<connect gate="G$1" pin="RTD_POWER+" pad="RTD_POWER+"/>
+<connect gate="G$1" pin="RTD_POWER-" pad="RTD_POWER-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ELECTRICAL_CONDUCTIVITY">
+<description>Based on a genetic algorithm for predicting calibration requirements for an electrical conductivity electrode. 
+
+Based on work from F. T. Werner and R. N. Dean (under figure 7 are typical dimensions), "Characterising a PCB electrical conductivity sensor using electromagnetic simulation and a genetic algorithm," in IET Science, Measurement &amp; Technology, vol. 11, no. 6, pp. 761-765, 9 2017.
+doi: 10.1049/iet-smt.2016.0489
+URL: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=8025492&amp;isnumber=8025440</description>
+<gates>
+<gate name="G$1" symbol="ELECTRICAL_CONDUCTIVITY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ELECTRICAL_CONDUCTIVITY">
+<connects>
+<connect gate="G$1" pin="EC_1" pad="EC_1"/>
+<connect gate="G$1" pin="EC_2" pad="EC_2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GAN_SINGLE_REF_ELEC">
+<description>2018 New single sensor with reference electrode and three pads</description>
+<gates>
+<gate name="G$1" symbol="GAN_SINGLE_REF_ELEC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GAN_SENSOR_REF_ELEC">
+<connects>
+<connect gate="G$1" pin="DF" pad="DF"/>
+<connect gate="G$1" pin="DS" pad="DS"/>
+<connect gate="G$1" pin="REF_ELEC" pad="REF_ELEC"/>
+<connect gate="G$1" pin="REF_SENSE" pad="DS_RF"/>
+<connect gate="G$1" pin="SCHOTTKY_DIODE" pad="SCHOTTKY_DIODE"/>
+<connect gate="G$1" pin="SF" pad="SF"/>
+<connect gate="G$1" pin="SS" pad="SS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GAN_CC_ARRAY_SENSOR">
+<description>2015 Old constant current array sensor - no temperature measurement or Schottky diode</description>
+<gates>
+<gate name="G$1" symbol="GAN_CC_ARRAY_SENSOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GAN_CC_ARRAY_SENSOR">
+<connects>
+<connect gate="G$1" pin="DF" pad="DF"/>
+<connect gate="G$1" pin="DS1" pad="DS1"/>
+<connect gate="G$1" pin="DS2" pad="DS2"/>
+<connect gate="G$1" pin="DS3" pad="DS3"/>
+<connect gate="G$1" pin="SF" pad="SF"/>
+<connect gate="G$1" pin="SS1" pad="SS1"/>
+<connect gate="G$1" pin="SS2" pad="SS2"/>
+<connect gate="G$1" pin="SS3" pad="SS3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GAN_CC_ARRAY_SENSOR_REF_ELEC_SCHOTTKY">
+<description>2018 New constant current array</description>
+<gates>
+<gate name="G$1" symbol="GAN_CC_ARRAY_SENSOR_REFELEC_SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GAN_CC_ARRAY_SENSOR_REFELEC_SCHOTTKY">
+<connects>
+<connect gate="G$1" pin="DF" pad="DF"/>
+<connect gate="G$1" pin="DS1" pad="DS1"/>
+<connect gate="G$1" pin="DS2" pad="DS2"/>
+<connect gate="G$1" pin="DS3" pad="DS3"/>
+<connect gate="G$1" pin="REF_ELEC" pad="REF_ELEC"/>
+<connect gate="G$1" pin="SCHOTTKY_DIODE" pad="SCHOTTKY_DIODE"/>
+<connect gate="G$1" pin="SF" pad="SF"/>
+<connect gate="G$1" pin="SS1" pad="SS1"/>
+<connect gate="G$1" pin="SS2" pad="SS2"/>
+<connect gate="G$1" pin="SS3" pad="SS3"/>
+</connects>
+<technologies>
+<technology name=""/>
+<technology name="GAN"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SOLDER_PAD">
+<gates>
+<gate name="G$1" symbol="SOLDER_PAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2.5_MM_X_2.5_MM_PAD">
+<connects>
+<connect gate="G$1" pin="SOLDER_PAD" pad="SOLDER_PAD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

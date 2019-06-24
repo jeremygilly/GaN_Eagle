@@ -59,32 +59,35 @@
 <library>
 <packages>
 <package name="GAN_SINGLE_SENSOR">
-<smd name="SF" x="0.33" y="0.15" dx="0.66" dy="0.3" layer="1"/>
-<smd name="DF" x="2.23" y="0.15" dx="0.66" dy="0.3" layer="1"/>
-<smd name="SS" x="1.03" y="0.15" dx="0.26" dy="0.3" layer="1"/>
-<smd name="DS" x="1.53" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<smd name="SF" x="0.33" y="0" dx="0.66" dy="0.6" layer="1"/>
+<smd name="DF" x="2.23" y="0" dx="0.66" dy="0.6" layer="1"/>
+<smd name="SS" x="1.03" y="0" dx="0.26" dy="0.6" layer="1"/>
+<smd name="DS" x="1.53" y="0" dx="0.26" dy="0.6" layer="1"/>
 <wire x1="-0.1" y1="1.81" x2="2.68" y2="1.81" width="0.127" layer="21"/>
-<wire x1="2.68" y1="1.81" x2="2.68" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="2.68" y1="-0.1" x2="-0.1" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="-0.1" y1="-0.1" x2="-0.1" y2="1.81" width="0.127" layer="21"/>
-<text x="0" y="4.34" size="1.27" layer="25">&gt;NAME</text>
-<text x="0" y="-2.54" size="1.27" layer="27">&gt;VALUES</text>
+<wire x1="2.68" y1="1.81" x2="2.68" y2="-0.45" width="0.127" layer="21"/>
+<wire x1="2.68" y1="-0.45" x2="-0.1" y2="-0.45" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="-0.45" x2="-0.1" y2="1.81" width="0.127" layer="21"/>
+<text x="-0.4" y="3.24" size="1.27" layer="25">GaN</text>
+<text x="-1" y="-3.54" size="1.016" layer="27">Single 
+Sensor</text>
 <rectangle x1="0" y1="1.3" x2="0.66" y2="2.87" layer="21"/>
 <rectangle x1="1.9" y1="1.3" x2="2.56" y2="2.87" layer="21"/>
 <rectangle x1="0.9" y1="1.3" x2="1.16" y2="1.6" layer="21"/>
 <rectangle x1="1.4" y1="1.3" x2="1.66" y2="1.6" layer="21"/>
 </package>
 <package name="RTD_4-WIRE">
-<smd name="RTD_POWER+" x="0.33" y="0.15" dx="0.66" dy="0.3" layer="1" rot="R180"/>
-<smd name="RTD_POWER-" x="1.18" y="0.15" dx="0.66" dy="0.3" layer="1" rot="R180"/>
-<wire x1="-0.1" y1="-0.1" x2="-0.1" y2="1.81" width="0.127" layer="51"/>
-<wire x1="-0.1" y1="1.81" x2="1.61" y2="1.81" width="0.127" layer="51"/>
-<wire x1="1.61" y1="1.81" x2="1.61" y2="-0.1" width="0.127" layer="51"/>
-<wire x1="1.61" y1="-0.1" x2="-0.1" y2="-0.1" width="0.127" layer="51"/>
-<text x="0" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="0" y="-2.54" size="1.27" layer="27">&gt;VALUES</text>
+<smd name="RTD_POWER+" x="0.065" y="0" dx="0.33" dy="0.6" layer="1" rot="R180"/>
+<smd name="RTD_POWER-" x="1.445" y="0" dx="0.33" dy="0.6" layer="1" rot="R180"/>
+<wire x1="-0.4" y1="-0.45" x2="-0.4" y2="1.81" width="0.127" layer="51"/>
+<wire x1="-0.4" y1="1.81" x2="1.91" y2="1.81" width="0.127" layer="51"/>
+<wire x1="1.91" y1="1.81" x2="1.91" y2="-0.45" width="0.127" layer="51"/>
+<wire x1="1.91" y1="-0.45" x2="-0.4" y2="-0.45" width="0.127" layer="51"/>
+<text x="-1.1" y="2.44" size="1.016" layer="25">Pt RTD</text>
+<text x="-1.5" y="-2.44" size="1.016" layer="27">Pt1000</text>
 <rectangle x1="0" y1="1.3" x2="0.66" y2="1.6" layer="21"/>
 <rectangle x1="0.85" y1="1.3" x2="1.51" y2="1.6" layer="21"/>
+<smd name="RTD_SENSE+" x="0.465" y="0" dx="0.33" dy="0.6" layer="1" rot="R180"/>
+<smd name="RTD_SENSE-" x="1.015" y="0" dx="0.33" dy="0.6" layer="1" rot="R180"/>
 </package>
 <package name="ELECTRICAL_CONDUCTIVITY">
 <smd name="EC_1" x="0" y="0" dx="10" dy="2.5" layer="1" rot="R270"/>
@@ -104,19 +107,20 @@
 </package>
 <package name="GAN_SENSOR_REF_ELEC">
 <description>GaN single sensor with reference electrode, and Schottky diode</description>
-<smd name="SF" x="0.33" y="0.15" dx="0.66" dy="0.3" layer="1"/>
-<smd name="SS" x="1.03" y="0.15" dx="0.26" dy="0.3" layer="1"/>
-<smd name="SCHOTTKY_DIODE" x="-0.29" y="0.15" dx="0.27" dy="0.3" layer="1"/>
-<smd name="REF_ELEC" x="-0.715" y="0.15" dx="0.26" dy="0.3" layer="1"/>
-<smd name="DS" x="1.53" y="0.15" dx="0.26" dy="0.3" layer="1"/>
-<smd name="DS_RF" x="2.03" y="0.15" dx="0.26" dy="0.3" layer="1"/>
-<smd name="DF" x="2.73" y="0.15" dx="0.66" dy="0.3" layer="1" rot="R180"/>
-<wire x1="-1" y1="-0.1" x2="-1" y2="1.6" width="0.127" layer="51"/>
-<wire x1="-1" y1="1.6" x2="3.2" y2="1.6" width="0.127" layer="51"/>
-<wire x1="3.2" y1="1.6" x2="3.2" y2="-0.1" width="0.127" layer="51"/>
-<wire x1="3.2" y1="-0.1" x2="-1" y2="-0.1" width="0.127" layer="51"/>
-<text x="-1.27" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUES</text>
+<smd name="SF" x="0.33" y="0" dx="0.66" dy="0.6" layer="1"/>
+<smd name="SS" x="1.03" y="0" dx="0.26" dy="0.6" layer="1"/>
+<smd name="SCHOTTKY_DIODE" x="-0.34" y="0" dx="0.27" dy="0.6" layer="1"/>
+<smd name="REF_ELEC" x="-0.82" y="0" dx="0.26" dy="0.6" layer="1"/>
+<smd name="DS" x="1.53" y="0" dx="0.26" dy="0.6" layer="1"/>
+<smd name="DS_RF" x="2.03" y="0" dx="0.26" dy="0.6" layer="1"/>
+<smd name="DF" x="2.73" y="0" dx="0.66" dy="0.6" layer="1" rot="R180"/>
+<wire x1="-1.15" y1="-0.45" x2="-1.15" y2="1.6" width="0.127" layer="51"/>
+<wire x1="-1.15" y1="1.6" x2="3.2" y2="1.6" width="0.127" layer="51"/>
+<wire x1="3.2" y1="1.6" x2="3.2" y2="-0.45" width="0.127" layer="51"/>
+<wire x1="3.2" y1="-0.45" x2="-1.15" y2="-0.45" width="0.127" layer="51"/>
+<text x="-0.67" y="3.24" size="1.27" layer="25">GaN</text>
+<text x="-3.47" y="-3.34" size="1.016" layer="27">Single Sensor 
+with Ref Elec</text>
 <rectangle x1="0" y1="1.3" x2="0.66" y2="2.87" layer="21"/>
 <rectangle x1="2.4" y1="1.3" x2="3.06" y2="2.87" layer="21"/>
 <rectangle x1="0.9" y1="1.3" x2="1.16" y2="1.6" layer="21"/>
@@ -128,20 +132,20 @@
 </package>
 <package name="GAN_CC_ARRAY_SENSOR">
 <description>GaN constant current array sensor pads (two for power, and three pairs of sense terminals).</description>
-<smd name="SF" x="0.33" y="0.15" dx="0.66" dy="0.3" layer="1"/>
-<smd name="DF" x="4.23" y="0.15" dx="0.66" dy="0.3" layer="1"/>
+<smd name="SF" x="0.33" y="0" dx="0.66" dy="0.6" layer="1"/>
+<smd name="DF" x="4.23" y="0" dx="0.66" dy="0.6" layer="1"/>
 <wire x1="-0.1" y1="1.81" x2="4.72" y2="1.81" width="0.127" layer="21"/>
-<wire x1="4.72" y1="1.81" x2="4.72" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="4.72" y1="-0.1" x2="-0.1" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="-0.1" y1="-0.1" x2="-0.1" y2="1.81" width="0.127" layer="21"/>
-<text x="0" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="0" y="-2.54" size="1.27" layer="27">&gt;VALUES</text>
-<smd name="SS1" x="1.03" y="0.15" dx="0.26" dy="0.3" layer="1"/>
-<smd name="DS1" x="1.53" y="0.15" dx="0.26" dy="0.3" layer="1"/>
-<smd name="SS2" x="2.03" y="0.15" dx="0.26" dy="0.3" layer="1"/>
-<smd name="DS2" x="2.53" y="0.15" dx="0.26" dy="0.3" layer="1"/>
-<smd name="SS3" x="3.03" y="0.15" dx="0.26" dy="0.3" layer="1"/>
-<smd name="DS3" x="3.53" y="0.15" dx="0.26" dy="0.3" layer="1"/>
+<wire x1="4.72" y1="1.81" x2="4.72" y2="-0.45" width="0.127" layer="21"/>
+<wire x1="4.72" y1="-0.45" x2="-0.1" y2="-0.45" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="-0.45" x2="-0.1" y2="1.81" width="0.127" layer="21"/>
+<text x="0" y="3.44" size="1.27" layer="25">GaN</text>
+<text x="-2.6" y="-1.64" size="1.016" layer="27">Sensor Array</text>
+<smd name="SS1" x="1.03" y="0" dx="0.26" dy="0.6" layer="1"/>
+<smd name="DS1" x="1.53" y="0" dx="0.26" dy="0.6" layer="1"/>
+<smd name="SS2" x="2.03" y="0" dx="0.26" dy="0.6" layer="1"/>
+<smd name="DS2" x="2.53" y="0" dx="0.26" dy="0.6" layer="1"/>
+<smd name="SS3" x="3.03" y="0" dx="0.26" dy="0.6" layer="1"/>
+<smd name="DS3" x="3.53" y="0" dx="0.26" dy="0.6" layer="1"/>
 <rectangle x1="0" y1="1.3" x2="0.66" y2="2.87" layer="21"/>
 <rectangle x1="0.9" y1="1.3" x2="1.16" y2="1.6" layer="21"/>
 <rectangle x1="1.4" y1="1.3" x2="1.66" y2="1.6" layer="21"/>
@@ -153,22 +157,23 @@
 </package>
 <package name="GAN_CC_ARRAY_SENSOR_REFELEC_SCHOTTKY">
 <description>GaN constant current array sensor pads (two for power, and three pairs of sense terminals).</description>
-<smd name="SF" x="0.33" y="0.15" dx="0.66" dy="0.3" layer="1"/>
-<smd name="DF" x="4.23" y="0.15" dx="0.66" dy="0.3" layer="1"/>
-<wire x1="-0.97" y1="1.81" x2="4.72" y2="1.81" width="0.127" layer="21"/>
-<wire x1="4.72" y1="1.81" x2="4.72" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="4.72" y1="-0.1" x2="-0.97" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="-0.97" y1="-0.1" x2="-0.97" y2="1.81" width="0.127" layer="21"/>
-<text x="0" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="0" y="-2.54" size="1.27" layer="27">&gt;VALUES</text>
-<smd name="SS1" x="1.03" y="0.15" dx="0.26" dy="0.3" layer="1"/>
-<smd name="DS1" x="1.53" y="0.15" dx="0.26" dy="0.3" layer="1"/>
-<smd name="SS2" x="2.03" y="0.15" dx="0.26" dy="0.3" layer="1"/>
-<smd name="DS2" x="2.53" y="0.15" dx="0.26" dy="0.3" layer="1"/>
-<smd name="SS3" x="3.03" y="0.15" dx="0.26" dy="0.3" layer="1"/>
-<smd name="DS3" x="3.53" y="0.15" dx="0.26" dy="0.3" layer="1"/>
-<smd name="SCHOTTKY_DIODE" x="-0.3" y="0.15" dx="0.28" dy="0.3" layer="1"/>
-<smd name="REF_ELEC" x="-0.73" y="0.15" dx="0.28" dy="0.3" layer="1"/>
+<smd name="SF" x="0.33" y="0" dx="0.66" dy="0.6" layer="1"/>
+<smd name="DF" x="4.23" y="0" dx="0.66" dy="0.6" layer="1"/>
+<wire x1="-1.19" y1="1.81" x2="4.72" y2="1.81" width="0.127" layer="21"/>
+<wire x1="4.72" y1="1.81" x2="4.72" y2="-0.45" width="0.127" layer="21"/>
+<wire x1="4.72" y1="-0.45" x2="-1.19" y2="-0.45" width="0.127" layer="21"/>
+<wire x1="-1.19" y1="-0.45" x2="-1.19" y2="1.81" width="0.127" layer="21"/>
+<text x="0" y="3.44" size="1.27" layer="25">GaN</text>
+<text x="-3.1" y="-3.34" size="1.016" layer="27">Sensor Array 
+with Ref Elec</text>
+<smd name="SS1" x="1.03" y="0" dx="0.26" dy="0.6" layer="1"/>
+<smd name="DS1" x="1.53" y="0" dx="0.26" dy="0.6" layer="1"/>
+<smd name="SS2" x="2.03" y="0" dx="0.26" dy="0.6" layer="1"/>
+<smd name="DS2" x="2.53" y="0" dx="0.26" dy="0.6" layer="1"/>
+<smd name="SS3" x="3.03" y="0" dx="0.26" dy="0.6" layer="1"/>
+<smd name="DS3" x="3.53" y="0" dx="0.26" dy="0.6" layer="1"/>
+<smd name="SCHOTTKY_DIODE" x="-0.31" y="0" dx="0.28" dy="0.6" layer="1"/>
+<smd name="REF_ELEC" x="-0.76" y="0" dx="0.28" dy="0.6" layer="1"/>
 <rectangle x1="0" y1="1.3" x2="0.66" y2="2.87" layer="21"/>
 <rectangle x1="3.9" y1="1.3" x2="4.56" y2="2.87" layer="21"/>
 <rectangle x1="0.9" y1="1.3" x2="1.16" y2="1.6" layer="21"/>
@@ -182,7 +187,7 @@
 <rectangle x1="-0.87" y1="1.3" x2="-0.59" y2="1.6" layer="21"/>
 </package>
 <package name="2.5_MM_X_2.5_MM_PAD">
-<smd name="SOLDER_PAD" x="0" y="0" dx="2.5" dy="5" layer="1"/>
+<smd name="SOLDER_PAD" x="0" y="0" dx="1.25" dy="2.5" layer="1"/>
 </package>
 <package name="Z-AXIS_SILKSCREEN">
 <wire x1="-3.7775" y1="-0.3" x2="3.7775" y2="-0.3" width="0.1524" layer="21"/>
@@ -196,26 +201,44 @@
 </package>
 <package name="GAN_SINGLE_SENSOR_SILKSCREEN">
 <description>2015 single sensor with silkscreen only (for z-axis elastomer alignment)</description>
-<wire x1="-0.1" y1="1.71" x2="2.68" y2="1.71" width="0.127" layer="21"/>
-<wire x1="2.68" y1="1.71" x2="2.68" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="2.68" y1="-0.1" x2="-0.1" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="-0.1" y1="-0.1" x2="-0.1" y2="1.71" width="0.127" layer="21"/>
-<text x="0" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="0" y="-2.54" size="1.27" layer="27">&gt;VALUES</text>
-<rectangle x1="0" y1="0" x2="0.66" y2="1.57" layer="21"/>
-<rectangle x1="1.9" y1="0" x2="2.56" y2="1.57" layer="21"/>
-<rectangle x1="0.9" y1="0" x2="1.16" y2="0.3" layer="21"/>
-<rectangle x1="1.4" y1="0" x2="1.66" y2="0.3" layer="21"/>
-<wire x1="-0.1" y1="-0.1" x2="-0.1" y2="-0.09" width="0.127" layer="21"/>
-<wire x1="-0.1" y1="-0.09" x2="-0.1" y2="1.71" width="0.127" layer="21"/>
-<wire x1="-0.1" y1="1.71" x2="2.675" y2="1.71" width="0.127" layer="21"/>
-<rectangle x1="1.9" y1="0" x2="2.56" y2="1.57" layer="21"/>
-<rectangle x1="1.9" y1="0" x2="2.56" y2="1.57" layer="21"/>
-<wire x1="2.675" y1="-0.1" x2="2.675" y2="-0.09" width="0.127" layer="21"/>
-<wire x1="2.675" y1="-0.09" x2="2.675" y2="1.71" width="0.127" layer="21"/>
-<wire x1="-0.1" y1="-0.09" x2="2.675" y2="-0.09" width="0.127" layer="21"/>
-<wire x1="0" y1="2.8" x2="0" y2="-2" width="0.0762" layer="21"/>
-<wire x1="-2" y1="0" x2="4" y2="0" width="0.0762" layer="21"/>
+<wire x1="-3.075" y1="1.71" x2="-3.08" y2="1.71" width="0.127" layer="22"/>
+<wire x1="-3.08" y1="1.71" x2="-3.08" y2="-0.1" width="0.127" layer="22"/>
+<wire x1="-3.08" y1="-0.1" x2="-0.3" y2="-0.1" width="0.127" layer="22"/>
+<text x="-0.4" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.4" y="-2.54" size="1.27" layer="27">&gt;VALUES</text>
+<rectangle x1="-1.06" y1="0" x2="-0.4" y2="1.57" layer="22" rot="R180"/>
+<rectangle x1="-2.96" y1="0" x2="-2.3" y2="1.57" layer="22" rot="R180"/>
+<rectangle x1="-1.56" y1="0" x2="-1.3" y2="0.3" layer="22" rot="R180"/>
+<rectangle x1="-2.06" y1="0" x2="-1.8" y2="0.3" layer="22" rot="R180"/>
+<wire x1="-0.3" y1="-0.1" x2="-0.3" y2="-0.09" width="0.127" layer="22"/>
+<wire x1="-0.3" y1="-0.09" x2="-0.3" y2="1.71" width="0.127" layer="22"/>
+<wire x1="-0.3" y1="1.71" x2="-3.075" y2="1.71" width="0.127" layer="22"/>
+<rectangle x1="-2.96" y1="0" x2="-2.3" y2="1.57" layer="22" rot="R180"/>
+<rectangle x1="-2.96" y1="0" x2="-2.3" y2="1.57" layer="22" rot="R180"/>
+<wire x1="-3.075" y1="-0.1" x2="-3.075" y2="-0.09" width="0.127" layer="22"/>
+<wire x1="-3.075" y1="-0.09" x2="-3.075" y2="1.71" width="0.127" layer="22"/>
+<wire x1="-0.3" y1="-0.09" x2="-3.075" y2="-0.09" width="0.127" layer="22"/>
+<wire x1="-0.4" y1="2.8" x2="-0.4" y2="-2" width="0.0762" layer="22"/>
+<wire x1="1.6" y1="0" x2="-4.4" y2="0" width="0.0762" layer="22"/>
+</package>
+<package name="CONSTANT_VOLTAGE_ARRAY">
+<smd name="SF" x="1.55" y="4.35" dx="2.98" dy="0.34" layer="1" rot="R180"/>
+<wire x1="-0.1" y1="3.61" x2="3.18" y2="3.61" width="0.127" layer="21"/>
+<wire x1="3.18" y1="3.61" x2="3.18" y2="0.9" width="0.127" layer="21"/>
+<wire x1="3.18" y1="0.9" x2="-0.1" y2="0.9" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="0.9" x2="-0.1" y2="3.61" width="0.127" layer="21"/>
+<text x="0.1" y="5.14" size="1.27" layer="25">GaN</text>
+<text x="-0.9" y="-4.74" size="1.016" layer="27">Constant 
+Voltage
+Array</text>
+<smd name="CS1" x="0.91" y="0" dx="0.26" dy="0.6" layer="1"/>
+<smd name="CS2" x="1.59" y="0" dx="0.26" dy="0.6" layer="1"/>
+<smd name="CS3" x="2.27" y="0" dx="0.26" dy="0.6" layer="1"/>
+<rectangle x1="0.1" y1="2.83" x2="0.44" y2="3.53" layer="21"/>
+<rectangle x1="0.74" y1="1" x2="1.08" y2="1.34" layer="21"/>
+<rectangle x1="1.42" y1="1" x2="1.76" y2="1.34" layer="21"/>
+<rectangle x1="2.1" y1="1" x2="2.44" y2="1.34" layer="21"/>
+<rectangle x1="2.64" y1="2.83" x2="2.98" y2="3.53" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -305,6 +328,17 @@
 </symbol>
 <symbol name="Z-AXIS_SILKSCREEN">
 </symbol>
+<symbol name="CONSTANT_VOLTAGE_ARRAY">
+<wire x1="0" y1="0" x2="25.4" y2="0" width="0.254" layer="94"/>
+<wire x1="25.4" y1="0" x2="25.4" y2="20.32" width="0.254" layer="94"/>
+<wire x1="25.4" y1="20.32" x2="0" y2="20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="20.32" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="SF_HIGH" x="2.54" y="-5.08" length="middle" direction="pwr" rot="R90"/>
+<pin name="CS1" x="12.7" y="-5.08" length="middle" rot="R90"/>
+<pin name="CS2" x="17.78" y="-5.08" length="middle" rot="R90"/>
+<pin name="CS3" x="22.86" y="-5.08" length="middle" rot="R90"/>
+<text x="2.54" y="17.78" size="1.016" layer="94">Constant Voltage Array</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GAN_SINGLE_SENSOR_ONLY">
@@ -336,6 +370,8 @@
 <connects>
 <connect gate="G$1" pin="RTD_POWER+" pad="RTD_POWER+"/>
 <connect gate="G$1" pin="RTD_POWER-" pad="RTD_POWER-"/>
+<connect gate="G$1" pin="RTD_SENSE+" pad="RTD_SENSE+"/>
+<connect gate="G$1" pin="RTD_SENSE-" pad="RTD_SENSE-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -450,7 +486,31 @@ URL: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=8025492&amp;isn
 </device>
 </devices>
 </deviceset>
+<deviceset name="CONSTANT_VOLTAGE_ARRAY">
+<gates>
+<gate name="G$1" symbol="CONSTANT_VOLTAGE_ARRAY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CONSTANT_VOLTAGE_ARRAY">
+<connects>
+<connect gate="G$1" pin="CS1" pad="CS1"/>
+<connect gate="G$1" pin="CS2" pad="CS2"/>
+<connect gate="G$1" pin="CS3" pad="CS3"/>
+<connect gate="G$1" pin="SF_HIGH" pad="SF"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
